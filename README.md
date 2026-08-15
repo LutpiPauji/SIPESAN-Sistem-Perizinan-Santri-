@@ -6,8 +6,6 @@ SI-PESAN adalah aplikasi berbasis **Laravel 13** untuk mengelola proses perizina
 
 Aplikasi ini dirancang untuk penggunaan internal pondok/pesantren dengan alur persetujuan yang dapat disesuaikan melalui master data dan pengaturan sistem.
 
----
-
 ## Fitur Utama
 
 ### Dashboard
@@ -102,8 +100,6 @@ Menu pengaturan meliputi:
 - Format Nomor Surat
 - Backup & Restore
 
----
-
 ## Format Nomor Surat
 
 Nomor surat dapat dikonfigurasi melalui menu pengaturan.
@@ -126,8 +122,6 @@ Nomor surat:
 - Tidak berubah setelah diterbitkan
 - Tetap sama ketika cetak ulang
 - QR versi lama dinonaktifkan ketika reprint
-
----
 
 ## Backup, Restore, dan Reset
 
@@ -181,8 +175,6 @@ Data yang tetap dipertahankan:
 
 > Fitur Reset hanya tersedia untuk **Admin Default bawaan sistem**.
 
----
-
 ## Laporan
 
 Laporan dapat diekspor ke **Excel** dan **PDF**.
@@ -203,8 +195,6 @@ Nama lembaga pada file PDF dan Excel otomatis diambil dari:
 Pengaturan → Pengaturan Umum → Nama Lembaga
 ```
 
----
-
 ## Role Pengguna
 
 | Role | Fungsi |
@@ -224,8 +214,6 @@ Pimpinan
 ```
 
 Role **Ketua Asrama** dan **Muroby** mengikuti struktur/penugasan pengasuhan.
-
----
 
 ## Teknologi
 
@@ -252,8 +240,6 @@ Composer  : 2.x
 Node.js   : 26.x
 Database  : MySQL
 ```
-
----
 
 ## Instalasi Lokal
 
@@ -387,8 +373,6 @@ php artisan route:clear
 php artisan config:clear
 ```
 
----
-
 ## Menjalankan Aplikasi
 
 ### Artisan Serve
@@ -417,8 +401,6 @@ Gunakan:
 APP_URL=http://sipesan.test
 ```
 
----
-
 ## Urutan Setup Setelah Instalasi
 
 Setelah login sebagai Admin Default, lakukan konfigurasi dengan urutan:
@@ -444,8 +426,6 @@ Setelah login sebagai Admin Default, lakukan konfigurasi dengan urutan:
 ```
 
 Setelah master data dan pengaturan selesai, modul Perizinan dapat digunakan.
-
----
 
 ## Alur Operasional
 
@@ -526,8 +506,6 @@ terlambat_menit > 0
 
 Selanjutnya petugas dapat memproses alasan keterlambatan dan sanksi.
 
----
-
 ## QR Verifikasi
 
 QR surat hanya digunakan untuk:
@@ -542,8 +520,6 @@ Scanning QR **tidak mengubah**:
 - Waktu digunakan
 - Waktu kembali
 - Status transaksi lainnya
-
----
 
 ## Perintah Maintenance
 
@@ -582,8 +558,6 @@ Cek route backup:
 ```powershell
 php artisan route:list --path=pengaturan/backup-restore
 ```
-
----
 
 ## Troubleshooting
 
@@ -639,8 +613,6 @@ Pastikan tersedia:
 public/storage
 ```
 
----
-
 ## Keamanan
 
 Beberapa prinsip keamanan yang digunakan:
@@ -663,8 +635,6 @@ APP_DEBUG=false
 ```
 
 > Jangan menyimpan `.env` ke repository publik.
-
----
 
 ## Struktur Folder Penting
 
@@ -698,8 +668,6 @@ public/
 └── storage/
 ```
 
----
-
 ## Checklist Instalasi
 
 ```text
@@ -727,8 +695,6 @@ public/
 [ ] PDF dan Excel laporan dapat diunduh
 ```
 
----
-
 ## Catatan Pengembangan
 
 Pada pengembangan SI-PESAN:
@@ -740,15 +706,11 @@ Pada pengembangan SI-PESAN:
 - Pastikan status transaksi dan timestamp server tetap konsisten.
 - Gunakan snapshot data transaksi untuk laporan historis.
 
----
-
 ## Lisensi
 
 SI-PESAN merupakan aplikasi internal Sistem Perizinan Santri.
 
 Penggunaan, distribusi, dan pengembangan lebih lanjut menyesuaikan kebijakan pemilik aplikasi/lembaga.
-
----
 
 ## SI-PESAN
 
